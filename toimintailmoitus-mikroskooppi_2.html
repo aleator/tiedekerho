@@ -27,11 +27,56 @@
     <p> Tämän pitäisi olla melko turvallista. Alleviivataan tilaisuuden lopuksi, että aitoa rikosta ei tapahtunut etteivät
     kerholaiset myöhemmin pidätä ketään oikeasti.<p>
 
+    <p class="section-title">Kuvia:</p>
+
+    <div class="photo-gallery">
+    <figure class="photo">
+        <img src="21.12.25/IMG_20250121_175708.jpg" alt="Hius ja kiteitä" class="expandable">
+        <figcaption>Kerholaisen hius ja onnekas sattuma: preparaattiin käytetty hanavesi kuivui ja muodosti mielenkiintoisia kiteitä!</figcaption>
+    </figure>
+    <figure class="photo">
+        <img src="21.12.25/IMG_20250118_085602.jpg" alt="Toimistotuoli" class="expandable">
+        <figcaption>Rikospaikan kaluste</figcaption>
+    </figure>
+    <figure class="photo">
+        <img src="21.12.25/IMG_20250118_085828.jpg" alt="Epäilty" class="expandable">
+        <figcaption>Yksi epäillyistä - olisikohan tästä vaatteesta tarttunut nöyhtää rikospaikalle?</figcaption>
+    </figure>
+    <figure class="photo">
+        <img src="21.12.25/IMG_20250121_220020.jpg" alt="Kangaskuituja teipissä" class="expandable">
+        <img src="21.12.25/IMG_20250121_220237.jpg" alt="Kangaskuituja teipissä" class="expandable">
+        <figcaption>Kangaskuituja teipissä. Olisikohan tässä ratkaiseva todiste?</figcaption>
+    </figure>
+
     <div class="footer">
         <p>Kintauden pientiedekerho | 21.1.2025</p>
     </div>
 </div>
 
+<!-- Lightbox -->
+<div id="lightbox">
+    <img id="lightbox-image" src="" alt="Expanded photo">
+</div>
+</div>
+
 </body>
-</html>
+<script>
+    // Lightbox functionality
+    document.addEventListener('DOMContentLoaded', () => {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = document.getElementById('lightbox-image');
+        const images = document.querySelectorAll('.expandable');
+
+        images.forEach(img => {
+            img.addEventListener('click', () => {
+                lightboxImage.src = img.src;
+                lightbox.style.display = 'flex';
+            });
+        });
+
+        lightbox.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+    });
+</script></html>
 
