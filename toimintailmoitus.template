@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style_ev.css">
+</head>
+<body>
+<div class="container">
+  <a href="{{ back_link }}" class="back-arrow"> ← </a>
+  <h1>{{ page_heading }}</h1>
+  <h2>{{ subheading }}</h2>
+  
+  {% for section in sections %}
+    <p class="section-title">{{ section.title }}</p>
+    <p>{{ section.content }}</p>
+    {% if section.list %}
+      <ul>
+      {% for item in section.list %}
+        <li>{{ item }}</li>
+      {% endfor %}
+      </ul>
+    {% endif %}
+  {% endfor %}
+  
+  <p class="section-title">Kuvia:</p>
+  <div class="photo-gallery">
+    {% for item in gallery %}
+    <figure class="photo">
+      {% for photo in item.photos %}
+      <img src="{{ photo.src }}" alt="{{ photo.alt }}" class="expandable">
+      {% endfor %}
+      <figcaption>{{ item.caption }}</figcaption>
+    </figure>
+    {% endfor %}
+    <!-- Lightbox -->
+    <div id="lightbox">
+      <img id="lightbox-image" src="" alt="Expanded photo">
+    </div>
+  </div>
+  
+  <div class="footer">
+    <p>{{ footer }}</p>
+  </div>
+</div>
+
+<script>
+  // Lightbox functionality
+  document.addEventListener('DOMContentLoaded', () => {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    const images = document.querySelectorAll('.expandable');
+
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        lightboxImage.src = img.src;
+        lightbox.style.display = 'flex';
+      });
+    });
+
+    lightbox.addEventListener('click', () => {
+      lightbox.style.display = 'none';
+    });
+  });
+</script>
+</body>
+</html>

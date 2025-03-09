@@ -1,0 +1,51 @@
+title: "Pientiedekerhon toimintailmoitus"
+back_link: "index.html"
+page_heading: "Toimintailmoitus"
+subheading: "Tiedekerho tutustuu mikroskooppiin"
+
+sections:
+  - title: "Kerhossa tapahtuu:"
+    content: >
+      Millä asiat näyttävät mikromaailmassa? Tiedekerho laittaa erilaisia asioita
+      mikroskooppiin ja tutkii miltä ne näyttävät. Kuka tuo mieleenpainuvimman näytteen?
+      Samalla esitellään, miten mikroskooppi toimii ja tutustutaan muutamaan erilaiseen näytteeseen.
+  - title: "Tarvittavat materiaalit:"
+    content: >
+      Mukaan voi ottaa pieniä näytteitä, jotka sopivat tarkasteltavaksi stereomikroskoopilla (~20-40x), kuten esimerkiksi:
+    list:
+      - "Arkinen esine, kuten kynän kärki tai puhelimen näyttö"
+      - "Kasvin osa (ei myrkyllinen), kuollut kärpänen tai hometta."
+      - "Tai mitä mieleen tulee."
+  - title: "Riskit ja turvasuunnitelma:"
+    content: >
+      Mikroskoopin pudottaminen lattialle. Mikä ei sinänsä ole riski, koska ohjaajahan maksaa sen.
+      Paitsi jos se putoaa jonkun varpaille. Varustaudutaan kehottamalla rauhallisuuteen.
+  - title: "Miten meni?"
+    content: >
+      Kauhea kaaos ja sähellys, mutta mikroskooppi säilyi ehjänä. Kukaan ei karannut, ja kaikki katsoivat
+      mikroskoopin läpi useammankin kerran! Tutkittiin banaanikärpästä, mehiläistä, kännykän ruutua ja
+      ampiaspesän sisusta.
+
+gallery:
+  - photos:
+      - src: "14.1.25/IMG_20250115_185502.jpg"
+        alt: "Ampiaispesä"
+      - src: "14.1.25images/IMG_20250115_190051.jpg"
+        alt: "Ampiaispesä mikroskoopissa"
+    caption: "Ampiaispesä, läheltä ja kaukaa"
+  - photos:
+      - src: "14.1.25/IMG_20250115_185534.jpg"
+        alt: "Perhonen"
+      - src: "14.1.25/IMG_20250115_185749.jpg"
+        alt: "Perhosen siipi mikroskoopissa"
+    caption: "Miltä perhosen siipi näyttää?"
+  - photos:
+      - src: "14.1.25/IMG_20250115_190203.jpg"
+        alt: "Banaanikärpänen"
+    caption: "Banaanikärpänen!"
+  - photos:
+      - src: "14.1.25/IMG_20250115_190304.jpg"
+        alt: "20 euroa"
+    caption: "Turvamerkintä 20 euron setelissä"
+
+footer: "Kintauden pientiedekerho | 14.1.2025"

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happo-emäs tulivuoret</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style_ev.css">
+</head>
+<body>
+<div class="container">
+  <a href="index.html" class="back-arrow"> ← </a>
+  <h1>Happo-emäs tulivuoret</h1>
+  <h2></h2>
+  
+  
+    <p class="section-title">Kerhossa tapahtuu:</p>
+    <p>Ohjaajan myöhästymisen takia kerhossa katsottiin lyhytdokumentti  tulivuorikokeista ja niinpä tehdään nyt omat etikka-sooda tulivuoret. Kokeillaan samalla hieman eri happo emäs pareja ja tutustutaan käsitteisiin 'molekyyli', 'kaasu' ja 'kemiallinen reaktio'.
+</p>
+    
+  
+    <p class="section-title">Riskit ja turvasuunnitelma:</p>
+    <p>Tämä lähinnä haisee pahalle ja sotkee paikat. Katsotaan ettei kukaan juo desitolkulla etikkaa tai syö kourakaupalla sitruunahappoa tai soodaa
+</p>
+    
+  
+  
+  <p class="section-title">Kuvia:</p>
+  <div class="photo-gallery">
+    
+    <figure class="photo">
+      
+      <img src="4.3.2025/tulivuori1.jpg" alt="Savinen tulivuori" class="expandable">
+      
+      <img src="4.3.2025/tulivuori2.jpg" alt="Savinen tulivuori" class="expandable">
+      
+      <figcaption>Tulivuoria savesta</figcaption>
+    </figure>
+    
+    <figure class="photo">
+      
+      <img src="4.3.2025/sitruunahappo.jpg" alt="Tikku-pallo malli sitruunahaposta" class="expandable">
+      
+      <figcaption>Tikku-pallo malli sitruunahaposta</figcaption>
+    </figure>
+    
+    <!-- Lightbox -->
+    <div id="lightbox">
+      <img id="lightbox-image" src="" alt="Expanded photo">
+    </div>
+  </div>
+  
+  <div class="footer">
+    <p>Kintauden pientiedekerho | 09.03.2025</p>
+  </div>
+</div>
+
+<script>
+  // Lightbox functionality
+  document.addEventListener('DOMContentLoaded', () => {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    const images = document.querySelectorAll('.expandable');
+
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        lightboxImage.src = img.src;
+        lightbox.style.display = 'flex';
+      });
+    });
+
+    lightbox.addEventListener('click', () => {
+      lightbox.style.display = 'none';
+    });
+  });
+</script>
+</body>
+</html>

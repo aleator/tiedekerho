@@ -1,0 +1,30 @@
+title: Kintauden tiedekerho
+stylesheet: styles.css
+logo: logo.svg
+header_text: Kintauden tiedekerho
+intro: Kintauden tiedekerho järjestää luma-aiheista toimintaa Kintauden koulun 1.
+  - 3. luokan oppilaille. Pyrimme herättelemään tulevaisuuden tekijöiden mielenkiintoa
+  tekemällä ja tutkimalla kaikkea mahdollista.
+upcoming_events:
+- href: toimintailmoitus-happo-emäs_tulivuoret.html
+  event_name: Happo-emäs tulivuoret
+  event_date: 4. Maaliskuuta 2025
+past_events:
+- href: toimintailmoitus-raketti-paineilma.html
+  event_name: Raketti paineilmalla, omat raketit
+  event_date: 4. helmikuuta 2025
+- href: toimintailmoitus-raketti-paineilma.html
+  event_name: Raketti paineilmalla
+  event_date: 28. tammikuuta 2025
+- href: toimintailmoitus-mikroskooppi_1.html
+  event_name: Mikä on mikroskooppi?!
+  event_date: 14. tammikuuta 2025
+- href: toimintailmoitus-mikroskooppi_2.html
+  event_name: Rikosmysteeri mikroskoopilla
+  event_date: 21. tammikuuta 2025
+- href: toimintailmoitus-raketti-paineilma.html
+  event_name: Raketti paineilmalla
+  event_date: 28. tammikuuta 2025
+- href: toimintailmoitus-tietokoneavusteinenvalmistus.html
+  event_name: 3D tulostin
+  event_date: 10. helmikuuta 2025

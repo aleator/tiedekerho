@@ -1,0 +1,28 @@
+title: Happo-emäs tulivuoret
+back_link: index.html
+page_heading: Happo-emäs tulivuoret
+subheading: ''
+sections:
+- title: 'Kerhossa tapahtuu:'
+  content: >
+    Ohjaajan myöhästymisen takia kerhossa katsottiin lyhytdokumentti 
+    tulivuorikokeista ja niinpä tehdään nyt omat etikka-sooda tulivuoret.
+    Kokeillaan samalla hieman eri happo emäs pareja ja tutustutaan käsitteisiin
+    'molekyyli', 'kaasu' ja 'kemiallinen reaktio'.
+- title: 'Riskit ja turvasuunnitelma:'
+  content: > 
+    Tämä lähinnä haisee pahalle ja sotkee paikat. Katsotaan ettei
+    kukaan juo desitolkulla etikkaa tai syö kourakaupalla sitruunahappoa
+    tai soodaa
+gallery:
+  - photos:
+      - src: "4.3.2025/tulivuori1.jpg"
+        alt: "Savinen tulivuori"
+      - src: "4.3.2025/tulivuori2.jpg"
+        alt: "Savinen tulivuori"
+    caption: "Tulivuoria savesta"
+  - photos:
+      - src: "4.3.2025/sitruunahappo.jpg"
+        alt: "Tikku-pallo malli sitruunahaposta"
+    caption: "Tikku-pallo malli sitruunahaposta"
+footer: Kintauden pientiedekerho | 09.03.2025
